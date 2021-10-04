@@ -9,11 +9,20 @@ html {
   -webkit-text-size-adjust: 100%;
   -text-size-adjust: 100%;
 }
- @media only screen and (min-width: 500px) {
-   h1{
 
-   }
- }
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+
+@media only screen and (min-width: 500px) {
+  h1{
+
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -25,8 +34,21 @@ html {
   font-style: normal;
 }
 
+nav li {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+li a {
+    color: #3783a3;
+    font-size: 1.5rem;
+}
+
 body {
   margin: 0;
+  padding: 1rem;
 }
 
 img {
@@ -34,8 +56,9 @@ img {
   width: 100%;
 }
 
-@-moz-viewport { width: device-width; scale: 1;}
-@-ms-viewport { width: device-width; scale: 1;}
-@-o-viewport { width: device-width; scale: 1;}
-@-webkit-viewport { width: device-width; scale: 1;}
-@viewport { width: device-width; scale: 1;}
+section {
+  display: grid;
+  grid-template-columns: auto;
+
+
+}

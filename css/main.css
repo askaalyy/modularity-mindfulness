@@ -51,9 +51,6 @@ li a {
 body {
   margin: 1rem;
 
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
 
 }
 

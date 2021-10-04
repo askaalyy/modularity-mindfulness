@@ -10,11 +10,11 @@ html {
   -text-size-adjust: 100%;
 }
 
-@-moz-viewport { width: device-width; scale: 1;}
-@-ms-viewport { width: device-width; scale: 1;}
-@-o-viewport { width: device-width; scale: 1;}
-@-webkit-viewport { width: device-width; scale: 1;}
-@viewport { width: device-width; scale: 1;}
+@-moz-viewport {width: device-width; scale: 1;}
+@-ms-viewport {width: device-width; scale: 1;}
+@-o-viewport {width: device-width; scale: 1;}
+@-webkit-viewport {width: device-width; scale: 1;}
+@viewport {width: device-width; scale: 1;}
 
 
 @media only screen and (min-width: 500px) {
@@ -58,11 +58,18 @@ img {
   width: 100%;
 }
 
+main {
+  align-items: center;
+  color: #000;
+
+}
+
 section figure {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
   display: contents;
+  padding: .5em 1em .6em;
 
 }
 
@@ -71,4 +78,5 @@ section figure {
   color: #3783a3;
   background-color: #fff;
   padding: .5rem;
+  border-style: solid;
  }

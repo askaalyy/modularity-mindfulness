@@ -49,8 +49,12 @@ li a {
 }
 
 body {
-  margin: 0;
-  padding: 1rem;
+  margin: 1rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
 }
 
 img {
@@ -61,19 +65,24 @@ img {
 main {
   align-items: center;
   color: #000;
-
 }
 
-section figure {
+section {
   display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
-  display: contents;
-  padding: .5em 1em .6em;
+  gap: 1rem;
+  grid-template-areas: repeat (3,1fr)
+  grid-template-areas:
+  "col1 col2 col";
+  a;
+}
+
+figure {
+  grid-template-columns: .5em 1em .6em;
+  display: flex;
 
 }
 
- a {
+ figure:last-child {
   text-decoration: none;
   color: #3783a3;
   background-color: #fff;
